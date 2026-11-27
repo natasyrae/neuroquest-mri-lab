@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#11131e">
+  <meta name="description" content="Masuki lab MRI Natasya Suryanto. Mainkan lima misi interaktif tentang rencana riset EfficientNet-B0 dan CBAM untuk klasifikasi empat kelas MRI otak.">
+  <title>NeuroQuest • MRI Brain Lab</title>
+  <link rel="icon" type="image/png" href="assets/brain.png">
+  <link rel="preload" href="assets/quest.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/neuro-lab.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="style.css">
+  <script src="content.js" defer></script>
+  <script src="journal.js" defer></script>
+  <script src="game.js" defer></script>
+  <script src="bench.js" defer></script>
+  <script src="lab.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="extra-lang.js" defer></script>
+  <script src="multi.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Lewati ke konten</a>
+<header class="topbar">
+  <div class="shell topline">
+    <a href="#markas" class="brand" aria-label="NeuroQuest, kembali ke Markas"><img src="assets/brain.png" alt="" width="36" height="36"><span>Neuro<span class="brand-end">Quest</span></span></a>
+    <nav class="navbar" aria-label="Navigasi utama">
+      <a href="#markas" data-nav="markas"><span class="ico" style="--icon:url(assets/i-pad.png)" aria-hidden="true"></span>Markas</a>
+      <a href="#peta" data-nav="peta"><span class="ico" style="--icon:url(assets/i-map.png)" aria-hidden="true"></span>Peta Misi</a>
+      <a href="#jurnal" data-nav="jurnal"><span class="ico" style="--icon:url(assets/i-book.png)" aria-hidden="true"></span>Jurnal Riset</a>
+    </nav>
+    <div class="hud">
+      <div class="language-switcher" id="language-switcher" aria-label="Choose language">
+        <button type="button" data-language="id">ID</button>
+        <button type="button" data-language="en">EN</button>
+        <button type="button" data-language="zh">中文</button>
+      </div>
+      <button id="xp-indicator" data-action="profile" class="xp-counter" type="button" aria-label="Lihat progres pemain"><span class="ico" style="--icon:url(assets/i-bolt.png)" aria-hidden="true"></span><span id="hud-xp">0 XP</span></button>
+      <button id="sound-btn" data-action="sound" class="square-btn" type="button" aria-label="Aktifkan efek suara" title="Aktifkan efek suara" aria-pressed="false"></button>
+    </div>
+  </div>
+</header>
+<main class="shell main" id="main" tabindex="-1">
+  <noscript><h1>NeuroQuest — MRI Brain Lab</h1><p>Aktifkan JavaScript untuk memainkan lima misi rencana riset Natasya Suryanto tentang klasifikasi empat kelas MRI menggunakan EfficientNet-B0 dan CBAM.</p></noscript>
+</main>
+<footer class="site-footer"><div class="shell footer-content"><span><img src="assets/brain.png" alt="" width="20" height="20"> NeuroQuest</span><p>Simulasi riset Natasya Suryanto</p><button class="text-btn" data-action="help">Cara bermain</button></div></footer>
+<dialog id="overlay" aria-labelledby="dialog-title"></dialog>
+<div id="announcer" class="sr-only" aria-live="polite"></div>
+</body>
+</html>
